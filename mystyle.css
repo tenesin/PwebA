@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1E201E;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    width: 600px;
+}
+
+.text {
+    color: #ECDFCC;
+}
+
+h1 {
+    text-decoration: underline;
+    padding: 5px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #ECDFCC;
+    font-size: 18px; 
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    padding: 6px;
+    padding-bottom: 25px;
+}
+
+a:hover {
+    color: #697565;
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+
+#typewriter {
+    animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
+}
+
+/* Carousel Styling */
+.carousel {
+    position: relative;
+    width: 320px; /* Set a fixed width for the carousel */
+    margin: 20px auto;
+    overflow: hidden; /* Hide images outside of the visible area */
+  }
+  
+  .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth sliding transition */
+  }
+  
+  .carousel-container img {
+    width: 100%; /* Ensure each image takes up 100% of the container width */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    z-index: 1; /* Ensure buttons stay on top */
+    border-radius: 5px;
+}
+
+button:hover {
+    color: #ECDFCC;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
