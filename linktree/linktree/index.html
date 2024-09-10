@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/linktree.svg">
+    <title>himme_binus linktree clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  </head>
+  <body>
+    <style>
+          
+        body {
+            font-family: 'Arvo', serif;
+            font-weight: 400;
+            scroll-behavior: smooth;
+            background: linear-gradient(0deg, #84375F 0%, #510406 85%);
+            margin: 0;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 40px;
+            background: none;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .right-icon {
+            position: absolute;
+            top: 25px;
+            right: 55px;
+            background-color: transparent; 
+            border: none; 
+            padding: 3px; 
+            border-radius: 50%; /* Make it a circle */
+            background-color: #3F0E0F;
+            z-index: 10;
+            cursor: pointer;
+        }
+        
+        
+        .right-icon img {
+            width: 17px;
+            height: 17px;
+            filter: invert(1); /* Make the SVG white */
+        }
+        
+        
+        .more-icon img {
+            width: 24px;  /* Adjust the size as needed */
+            height: 24px;
+            background: none;
+            border: none;
+        }
+                
+        .video-wrapper {
+            position: relative;
+            padding-top: 56.25%;
+            height: 0;
+            overflow: hidden;
+            transition: transform 0.3s;
+            border-radius: 20px;
+        }
+        
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .button-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #333;
+            border-radius: 50px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+        }
+        
+        .button-item:hover {
+            transform: scale(1.025);
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .icon, .text, .more-icon {
+            margin: 0 5px;
+        }
+        
+        .icon {
+            font-size: 1.5rem;
+        }
+
+        .custom-btn {
+            background-color: #E0CCD5;
+            border-radius: 25px; 
+            padding: 3px 12px; 
+            font-size: 0.8rem;
+        }
+        
+        .custom-icon {
+            width: 15px; 
+            height: 15px; 
+            vertical-align: middle;
+        }
+        
+        .custom-btn:hover {
+            background-color: #fff; /* Darker shade on hover */
+        }
+        
+        .footer-text {
+            font-weight: 600;
+        }
+        
+        .text {
+            flex-grow: 1;
+            text-align: center;
+        }
+        
+        .more-icon {
+            font-size: 1.3rem;
+        }
+        
+        .video-wrapper:hover {
+            transform: scale(1.025);
+        }
+
+        @media (max-width: 576px) {
+            .button-item {
+                font-size: 0.9rem; 
+            }
+        
+            .icon, .more-icon {
+                font-size: 1.2rem; 
+            }
+        }
+        
+    </style>
+    <div class="container pt-5">
+        <button class="right-icon">
+            <img src="/setting.svg" alt="Settings Icon">
+        </button>
+        <div class="text-center text-white">
+            <img class="rounded-circle py-2" src="profile.webp" alt="image" width="85">
+            <div class="pt-2">
+                <h5>@himme_binus</h5>
+                <p class="pb-3">"Precision In Roles, Pinnacle In Careers."</p>
+            </div>
+            <div class="video-wrapper shadow-lg">
+                <iframe src="https://www.youtube.com/embed/r5Xsj3_ltMM" allowfullscreen></iframe>
+            </div>                              
+        </div>
+
+        <div class="pt-4">
+            <p class="text-white text-center">Social Media</p>
+            <div class="buttons-container shadow-lg">
+                <a href="#" class="button-item">
+                    <span class="icon">
+                        <img src="/globe.svg" alt="website" width="30 height="30">
+                    </span>
+                    <span class="text">HIMME Official Website</span>
+                    <span class="more-icon">
+                        <img src="/more.svg" alt="More Icon">
+                    </span>
+                </a>
+
+                <a href="#" class="button-item">
+                    <span class="icon">
+                        <img src="/linkedin.svg" alt="LinkedIn" width="30 height="30">
+                    </span>
+                    <span class="text">HIMME LinkedIn</span>
+                    <span class="more-icon">
+                        <img src="/more.svg" alt="More Icon">
+                    </span>
+                </a>
+                <a href="#" class="button-item">
+                    <span class="icon">
+                        <img src="/youtube.svg" alt="Youtube" width="30 height="30">
+                    </span>
+                    <span class="text">HIMME Youtube Channel</span>
+                    <span class="more-icon">
+                        <img src="/more.svg" alt="More Icon">
+                    </span>
+                </a>
+                <a href="#" class="button-item">
+                    <span class="icon">
+                        <img src="/book.svg" alt="media-partner" width="30 height="30">
+                    </span>
+                    <span class="text">Media Partner Package</span>
+                    <span class="more-icon">
+                        <img src="/more.svg" alt="More Icon">
+                    </span>
+                </a>
+            </div>
+
+            <p class="text-white text-center pt-4">Contact Person</p> 
+            <div class="buttons-container">
+                <a href="#" class="button-item">
+                    <span class="icon">
+                        <img src="/whatsapp.svg" alt="whatsapp" width="30 height="30">
+                    </span>
+                    <span class="text">CP Sponsorship (Clara)</span>
+                    <span class="more-icon">
+                        <img src="/more.svg" alt="More Icon">
+                    </span>
+                </a>
+            </div>
+            <div class="footer text-center py-5">
+                <a href="#" class="btn custom-btn d-inline-flex align-items-center text-decoration-none">
+                    <span class="icon me-auto">
+                        <img src="/linktree_dark.svg" alt="linktree" class="custom-icon">
+                    </span>
+                    <span class="text footer-text">Bergabung dengan himme_binus di Linktree</span>
+                </a>
+            </div>
+            
+            
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
